@@ -1,0 +1,35 @@
+/* Added Border-Box to all features of HTML page for better sizing on my divs and gamebox div.
+- Also, since we didn't learn about psuedo elements in css class, the "::" is for psuedo elements for specific styling
+*/
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+}
+
+.Div2 {
+    background-color: blue;
+    height: 200px;
+    width: 100%;
+}
+
+.gamebox {
+    background-color: blueviolet;
+    height: 500px;
+    width: 100%;
+}
+
+.paddle {
+
+}
+
+.paddle.left {
+
+}
+
+.paddle.right {
+
+}
