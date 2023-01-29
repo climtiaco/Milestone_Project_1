@@ -29,13 +29,16 @@ body{
 }
 
 .gamebox {
-    background-color: blueviolet;
+    background-color: linear-gradient(blue, yellow);
     height: 55vh;
     width: 100%;
 }
 
 .score {
-    text-align:center;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    margin: 0px 300px;
 
 
 }
