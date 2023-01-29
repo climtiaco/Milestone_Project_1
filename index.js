@@ -1,19 +1,6 @@
-//Player name
-// For some reason my button isn't working to change the name of the second player.
-document.getElementById('name-butn').addEventListener("click", function() {
-    var player1 = prompt("Enter name for Player 1");
-    var player2 = prompt("Enter name for Player 2");
-    document.getElementById("player1").innerHTML = player1;
-    document.getElementbyId("player2").innerHTML = player2;
-});
+const rollButn = getElementById('roll-butn');
 
-
-// Roll the dice button
-// Math.floor rounds the number down to keep it a whole number
-var score = 0;
-
-
-document.getElementById('roll-butn').addEventListener("click", function(){
+function randomizeDice() {
     var dice1 = Math.floor(Math.random() * 6) +1; //This is going to generate a random number from 1 to 6.. you put the +1 after so that it includes the 6th dice roll
     var dice2 = Math.floor(Math.random() * 6) +1;
     document.getElementById("img1").src = "/images/dice" + dice1 + ".png";
@@ -26,4 +13,18 @@ document.getElementById('roll-butn').addEventListener("click", function(){
     } else {
         alert("It's a tie!")
     }
-});
+}
+
+const nameChange = document.getElementById('name-butn')
+const player1 = document.getElementById('player1')
+const player2 = document.getElementById('player2')
+
+function changeNames() {
+    const newName1 = prompt("Enter name for Player 1");
+    const newName2 = prompt("Enter name for Player 2");
+    player1.innerText = newName1;
+    player2.innerText = newName2;
+}
+
+rollButn.addEventListener("click", randomizeDice);
+nameChange.addEventListener("click", changeNames());
