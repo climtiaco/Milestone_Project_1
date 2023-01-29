@@ -14,15 +14,18 @@ body{
     background-color: #333;
 }
 
-h2 {
-    font-family: monaco, consolas, "Lucida Console", monospace;
-}
-
 .Div2 {
     background-color: blue;
     height: 30vh;
     width: 100%;
     text-align: center;
+    font-family: monaco, consolas, "Lucida Console", monospace;
+    font-size: 20px;
+    }
+
+
+.Div2.h2 {
+    font-family: monaco, consolas, "Lucida Console", monospace;
 }
 
 .gamebox {
@@ -32,10 +35,14 @@ h2 {
 }
 
 .score {
-    display: flex;
-    
+    text-align:center;
+
+
 }
 
+#scoreboard {
+    text-align: center;
+}
 
 
 
@@ -51,6 +58,11 @@ h2 {
     margin-left: 300px;
     padding: 40px;
 
+}
+
+.butn {
+    font-family: monaco, consolas, "Lucida Console", monospace;
+    padding: 20px;
 }
 
 

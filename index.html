@@ -13,33 +13,36 @@
 </header>
 <body> 
     <div class="Div2">
-        <h2>Enter the names of <br> yourself and your enemy <br>&#128520;  to see who wins in a good ole game of rolling dice! &#128520;</h2>
+        <p>Enter the names of <br> yourself and your enemy <br>&#128520;  to see who wins in a good ole game of rolling dice! &#128520;</p>
+
+        <p>First player to reach 10, wins!</p>
     </div>
     <div class="gamebox">
         <div class="score">
-            <p class="scoreboard">Score</p>
+            <p id="scoreboard">Score</p>
         <div id="Player-1-score">Player 1 Score: 0</div>
         <div id="Player-2-score">Player 2 Score: 0</div>
         </div>
 
         <div class="container"></div>
         <div class="dice">
-            <p class="player1">Player 1</p>
-            <img class="img1" src="/images/dice6.png">
+            <p class="player1" id="player1">Player 1</p>
+            <img id="img1" src="/images/dice6.png">
         </div>
 
         <div class="dice">
-            <p class="Player2">Player 2</p>
-            <img class="img2" src="/images/dice6.png">
+            <p class="player2" id="player2">Player 2</p>
+            <img id="img2" src="/images/dice6.png">
         </div>
        
         <div class="container bottom">
-            <button type="button" class="butn">Roll the Dice
+            <button type="button" class="butn" id="roll-butn">
+                Roll the Dice
             </button>
         </div>
 
         <div class="container bottom">
-            <button type="button" class="butn">
+            <button type="button" class="butn" id="name-butn">
                 Edit Names
             </button>
         </div>
