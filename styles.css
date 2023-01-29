@@ -5,31 +5,65 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: monaco, consolas, "Lucida Console", monospace;
+}
+
 body{
     margin: 0;
     background-color: #333;
 }
 
+h2 {
+    font-family: monaco, consolas, "Lucida Console", monospace;
+}
+
 .Div2 {
     background-color: blue;
-    height: 200px;
+    height: 30vh;
     width: 100%;
+    text-align: center;
 }
 
 .gamebox {
     background-color: blueviolet;
-    height: 500px;
+    height: 55vh;
     width: 100%;
 }
 
-.paddle {
+.score {
+    display: flex;
+    
+}
+
+
+
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice {
+    text-align: center;
+    display: inline-block;
+    margin-left: 300px;
+    padding: 40px;
 
 }
 
-.paddle.left {
 
-}
 
-.paddle.right {
 
-}
+
+
+
+
+/* Dev Notes:
+- Need to go back and mess with sizing of the website so that it all works together, rather than just having the pong game adjust to the screen and not the rest of the content
+
+
+
+
+*/
