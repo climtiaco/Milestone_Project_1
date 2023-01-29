@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+header {
+    color: white;
+}
+
 h1 {
     font-family: monaco, consolas, "Lucida Console", monospace;
 }
@@ -29,7 +33,7 @@ body{
 }
 
 .gamebox {
-    background-color: linear-gradient(blue, yellow);
+    background-image: linear-gradient(blue, yellow);
     height: 55vh;
     width: 100%;
 }
@@ -65,7 +69,7 @@ body{
 
 .butn {
     font-family: monaco, consolas, "Lucida Console", monospace;
-    padding: 20px;
+    padding: 10px;
 }
 
 
